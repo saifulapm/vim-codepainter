@@ -11,8 +11,6 @@ if codepainter#config#DefaultMappings()
   nnoremap <silent> <F3> :<c-u> call codepainter#navigate()<cr>
 endif
 
-command! -nargs=0 PainterPaint              silent! call codepainter#paintText(visualmode())
-command! -nargs=0 PainterGo                 silent! call codepainter#navigate()
 command! -nargs=0 PainterEraseAll           silent! call codepainter#EraseAll()
 command! -nargs=1 PainterPickColor          silent! call codepainter#ChangeColor(<f-args>)
 command! -nargs=1 PainterPickColorByName    silent! call codepainter#ChangeColorByName(<f-args>)
